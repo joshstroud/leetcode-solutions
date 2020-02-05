@@ -22,6 +22,7 @@ var numUniqueEmails = function(emails) {
   for (let i = 0; i < emails.length; i++) {
     const cleanEmail = cleanAnEmail(emails[i]);
 
+    console.log(cleanEmail);
     if (!uniqueEmails.get(cleanEmail)) {
       uniqueEmails.set(cleanEmail, true);
     }
@@ -36,12 +37,11 @@ const cleanAnEmail = function(email) {
   localName = localName.replace(/\./g, '');
   localNameBeforePlus = localName.split('+')[0];
 
-  return localNameBeforePlus + hostName;
+  return localNameBeforePlus + '@' + hostName;
 };
 
 const testEmails = [
   'test.email+alex@leetcode.com',
-  'test.e.mail+bob.cathy@leetcode.com',
-  'testemail+david@lee.tcode.com'
+  'test.email.leet+alex@code.com'
 ];
 console.log(`Number of valid emails: ${numUniqueEmails(testEmails)}`);
