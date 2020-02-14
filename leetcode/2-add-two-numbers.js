@@ -19,7 +19,7 @@ var addTwoNumbers = function(l1, l2) {
   let resultList = null;
   let currentNode = null;
 
-  while (l1 || l2) {
+  while (l1 || l2 || carry) {
     let sum = 0;
 
     const l1Val = l1 ? l1.val : 0;
