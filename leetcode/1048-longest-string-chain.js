@@ -67,4 +67,4 @@ var longestStrChain = function (words) {
   return maxWordChain;
 };
 
-const ex1 = ["a","b","ba","bca","bda","bdca"];
+// const ex1 = ["a","b","ba","bca","bda","bdca"];
