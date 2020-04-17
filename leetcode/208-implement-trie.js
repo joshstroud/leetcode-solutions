@@ -92,10 +92,10 @@ Trie.prototype.startsWith = function (prefix) {
  * var param_3 = obj.startsWith(prefix)
  */
 
-word = 'abcd';
-var obj = new Trie();
-obj.insert(word);
-obj.insert('abcfgh');
+// word = 'abcd';
+// var obj = new Trie();
+// obj.insert(word);
+// obj.insert('abcfgh');
 // console.log(JSON.stringify(obj));
 // console.log(obj.search(word));
-console.log(obj.startsWith('abd'));
+// console.log(obj.startsWith('abd'));
